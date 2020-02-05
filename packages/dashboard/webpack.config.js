@@ -12,12 +12,6 @@ module.exports = {
       amd: 'styled-components',
       root: 'styled',
     },
-    '@sbjr-react-utils-components/icons': {
-      commonjs: '@sbjr-react-utils-components/icons',
-      commonjs2: '@sbjr-react-utils-components/icons',
-      amd: '@sbjr-react-utils-components/icons',
-      root: 'SbjrRUCIcons',
-    },
     react: {
       commonjs: 'react',
       commonjs2: 'react',
@@ -28,9 +22,9 @@ module.exports = {
   output: {
     libraryTarget: 'umd',
     library: {
-      root: 'SbjrRUCModal',
-      commonjs: '@sbjr-react-utils-components/modal',
-      amd: '@sbjr-react-utils-components/modal',
+      root: 'SbjrRUCDashboard',
+      commonjs: '@sbjr-react-utils-components/dashboard',
+      amd: '@sbjr-react-utils-components/dashboard',
     },
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',

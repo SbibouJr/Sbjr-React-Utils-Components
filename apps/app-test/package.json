@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sbjr-react-utils-components/dashboard": "^2.0.0",
     "@sbjr-react-utils-components/icons": "^3.0.0",
     "@sbjr-react-utils-components/modal": "^2.0.0"
   },

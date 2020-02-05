@@ -1,0 +1,39 @@
+{
+  "name": "@sbjr-react-utils-components/dashboard",
+  "version": "2.0.0",
+  "description": "React Dashboard Component.",
+  "main": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "publish-package": "npm run clean && npm i && npm run build && npm publish --access=public",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">^16.0.0",
+    "styled-components": ">^5.0.0"
+  },
+  "author": "Billy Ros <billyros@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/Sbjr-React-Utils-Components/Dashboard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbjr-React-Utils-Components/Dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sbjr-React-Utils-Components/Dashboard/issues"
+  },
+  "keywords": [
+    "React",
+    "Utils",
+    "Component",
+    "Dashboard",
+    "Javascript"
+  ]
+}

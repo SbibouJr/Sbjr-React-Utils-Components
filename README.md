@@ -94,3 +94,12 @@ const rules = require('../../.eslintrc.js');
 
 module.exports = rules;
 ```
+
+
+### TODO
+
+- [ ] Libérer le repo @sbjr-react-utils-components et créer un repo @old-sbjr-react-utils-components
+- [ ] Mettre a jours les packages.json des packages (repo, issues, homepage)
+- [ ] Changer les versions et déployer les nouveau packages
+- [ ] Mettre a jours les readme.md des packages
+- [ ] Mettre a jour le readme global du monorepo

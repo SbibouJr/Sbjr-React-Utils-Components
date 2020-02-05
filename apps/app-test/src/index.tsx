@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Icon, { Loader, ExampleIcons } from '@sbjr-react-utils-components/icons';
 import '@sbjr-react-utils-components/icons/dist/index.css';
 
-import Icon, { Loader, ExampleIcons } from '@sbjr-react-utils-components/icons';
+import Modal from '@sbjr-react-utils-components/modal';
 
 import styled from 'styled-components';
 
@@ -22,6 +23,7 @@ const IconsLibWrapper = styled.div`
 const App = () => {
   return (
     <div>
+      <Modal show />
       <IconsLibWrapper>
         <Loader />
         <Icon />

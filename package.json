@@ -2,19 +2,10 @@
   "name": "root",
   "private": true,
   "description": "Monorepo for @sbjr-react-utils-components",
-  "author": "Billy Ros <billyros@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/parlons-peu-parlons-code/website/front"
-  },
-  "bugs": {
-    "url": "https://github.com/parlons-peu-parlons-code/website/front/issues"
-  },
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run --stream --scope $APP start",
-    "build": "lerna run build --stream --parallel",
+    "build": "lerna run build --stream",
     "add-package": "lerna add $PACKAGE --scope=$TO",
     "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx ./packages && eslint --ext .js,.jsx,.ts,.tsx ./apps",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
@@ -75,5 +66,14 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0"
+  },
+  "author": "Billy Ros <billyros@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parlons-peu-parlons-code/website/front"
+  },
+  "bugs": {
+    "url": "https://github.com/parlons-peu-parlons-code/website/front/issues"
   }
 }

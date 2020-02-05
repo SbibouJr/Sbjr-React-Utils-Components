@@ -1,0 +1,42 @@
+{
+  "name": "@sbjr-react-utils-components/modal",
+  "version": "2.0.0",
+  "description": "React Modal Component.",
+  "main": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --mode=development",
+    "publish-package": "npm run clean && npm i && npm run build && npm publish --access=public",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json"
+  },
+  "devDependencies": {
+    "@sbjr-react-utils-components/icons": "^3.0.0"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@sbjr-react-utils-components/icons": ">^3.0.0",
+    "react": ">^16.0.0",
+    "styled-components": ">^5.0.0"
+  },
+  "author": "Sbibou-Jr <sbibou.jr@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/Sbjr-React-Utils-Components/Modal#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbjr-React-Utils-Components/Modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sbjr-React-Utils-Components/Modal/issues"
+  },
+  "keywords": [
+    "React",
+    "Utils",
+    "Component",
+    "Modal",
+    "Javascript"
+  ]
+}

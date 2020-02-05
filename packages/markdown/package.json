@@ -1,0 +1,42 @@
+{
+  "name": "@sbjr-react-utils-components/markdown",
+  "version": "4.0.0",
+  "description": "A Markdown Renderer for react",
+  "main": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "publish-package": "npm run clean && npm i && npm run build && npm publish --access=public",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@types/markdown-it": "0.0.9",
+    "markdown-it": "^8.4.2",
+    "markdown-it-prism": "^2.0.3"
+  },
+  "peerDependencies": {
+    "react": ">^16.0.0"
+  },
+  "author": "Billy Ros <billyros@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/Sbjr-React-Utils-Components/Dashboard#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbjr-React-Utils-Components/Dashboard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sbjr-React-Utils-Components/Dashboard/issues"
+  },
+  "keywords": [
+    "React",
+    "Utils",
+    "Component",
+    "Markdown",
+    "Javascript"
+  ]
+}

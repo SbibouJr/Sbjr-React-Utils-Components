@@ -24,13 +24,13 @@
   },
   "author": "Sbibou-Jr <sbibou.jr@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/Sbjr-React-Utils-Components/Modal#readme",
+  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/packages/modal#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sbjr-React-Utils-Components/Modal.git"
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components"
   },
   "bugs": {
-    "url": "https://github.com/Sbjr-React-Utils-Components/Modal/issues"
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/issues"
   },
   "keywords": [
     "React",

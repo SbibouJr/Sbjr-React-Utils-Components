@@ -21,13 +21,13 @@
   },
   "author": "Billy Ros <billyros@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/Sbjr-React-Utils-Components/Dashboard#readme",
+  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/packages/dashboard#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sbjr-React-Utils-Components/Dashboard.git"
+    "url": "git+https://github.com/SbibouJr/Sbjr-React-Utils-Components"
   },
   "bugs": {
-    "url": "https://github.com/Sbjr-React-Utils-Components/Dashboard/issues"
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/issues"
   },
   "keywords": [
     "React",

@@ -69,11 +69,12 @@
   },
   "author": "Billy Ros <billyros@gmail.com>",
   "license": "ISC",
+  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parlons-peu-parlons-code/website/front"
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components"
   },
   "bugs": {
-    "url": "https://github.com/parlons-peu-parlons-code/website/front/issues"
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/issues"
   }
 }

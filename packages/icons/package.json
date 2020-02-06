@@ -1,0 +1,41 @@
+{
+  "name": "@sbjr-react-utils-components/icons",
+  "version": "3.0.0",
+  "description": "A React Icons Component based on Font-Awesome",
+  "main": "./dist/index.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "publish-package": "npm run clean && npm i && npm run build && npm publish --access=public",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">^16.0.0",
+    "styled-components": ">^5.0.0"
+  },
+  "author": "Billy Ros <billyros@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/packages/icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components"
+  },
+  "bugs": {
+    "url": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/issues"
+  },
+  "keywords": [
+    "React",
+    "Utils",
+    "Component",
+    "Icons",
+    "Javascript"
+  ]
+}

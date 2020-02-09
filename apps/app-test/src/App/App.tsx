@@ -3,7 +3,7 @@ import Icon, { Loader, ExampleIcons } from '@sbjr-react-utils-components/icons';
 import '@sbjr-react-utils-components/icons/dist/index.css';
 
 import Modal from '@sbjr-react-utils-components/modal';
-import Dashboard from '@sbjr-react-utils-components/dashboard';
+import { Dashboard } from '@sbjr-react-utils-components/dashboard';
 import Markdown from '@sbjr-react-utils-components/markdown';
 
 import * as Styled from './App.styles';

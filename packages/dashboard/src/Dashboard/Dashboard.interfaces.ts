@@ -1,4 +1,4 @@
-interface IDashboardCard {
+export interface IDashboardCard {
   title: string;
   bottomLeftComponent?: (() => JSX.Element) | JSX.Element | string;
   bottomRightComponent?: (() => JSX.Element) | JSX.Element | string;

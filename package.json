@@ -15,7 +15,8 @@
     "prettify:code": "prettier --config ./.prettierrc",
     "beforeCommit": "npm run lint && npm run prettify:check",
     "postinstall": "rm -rf node_modules/@types/react-native",
-    "publish-package": "npm run clean && npm run beforeCommit && lerna run publish-package --stream --parallel",
+    "publish-package": "npm run clean && npm run beforeCommit && lerna run --stream --scope $PACKAGE publish-package",
+    "publish-all-packages": "npm run clean && npm run beforeCommit && lerna run publish-package --stream --parallel",
     "clean": "rm -rf node_modules package-lock.json && npm i && npm run postinstall",
     "clean-packages": "lerna run clean --stream --parallel",
     "clean-all": "npm run clean && npm run clean-packages"

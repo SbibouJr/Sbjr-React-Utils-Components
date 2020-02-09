@@ -2,21 +2,27 @@
 
 **A React Icons Component based on Font-Awesome**
 
-![React image](https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png)
+![React image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMlUbPKRkWDuPrGLln27cr6_EK6ipM3Rw_vxNIxDaOVJA2e4O&s)
 
 ## Install
 
 This module is a React component, so you must obviously have [react](https://github.com/facebook/react) installed.
 
 **CDN :**
+
 ```js
-<script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/icons@latest"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@sbjr-react-utils-components/icons@latest"
+></script>
 ```
 
 **npm :**
+
 ```bash
 npm i -S @sbjr-react-utils-components/icons
 ```
+
 ## Usage
 
 ```js
@@ -25,14 +31,9 @@ import { render } from 'react-dom';
 import Icon, { CLASS_ICON } from '@sbjr-react-utils-components/icons';
 
 render(
-  (
-    <Icon
-      classIcon={CLASS_ICON.BOX_OPEN}
-    />
-  ),
+  <Icon classIcon={CLASS_ICON.BOX_OPEN} />,
   document.getElementById('react-container'),
 );
-
 ```
 
 ## Examples with all props
@@ -67,11 +68,9 @@ class CustomComponent extends React.Component {
 }
 
 render(
-  (
-    <div>
-      <CustomComponent />
-    </div>
-  ),
+  <div>
+    <CustomComponent />
+  </div>,
   document.getElementById('react-container'),
 );
 ```
@@ -84,11 +83,9 @@ import { render } from 'react-dom';
 import { Loader } from '@sbjr-react-utils-components/icons';
 
 render(
-  (
-    <div>
-      <Loader />
-    </div>
-  ),
+  <div>
+    <Loader />
+  </div>,
   document.getElementById('react-container'),
 );
 ```
@@ -101,11 +98,9 @@ import { render } from 'react-dom';
 import { ExampleIcons } from '@sbjr-react-utils-components/icons';
 
 render(
-  (
-    <div>
-      <ExampleIcons />
-    </div>
-  ),
+  <div>
+    <ExampleIcons />
+  </div>,
   document.getElementById('react-container'),
 );
 ```

@@ -1,6 +1,6 @@
 # Sbjr-React-Utils-Components - Modal
 
-![React image](https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png)
+![React image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMlUbPKRkWDuPrGLln27cr6_EK6ipM3Rw_vxNIxDaOVJA2e4O&s)
 
 **React Modal Component.**
 
@@ -10,14 +10,15 @@ This module is a React component, so you must obviously have [react](https://git
 
 This module depends on another module, [@sbjr-react-utils-components/icons](https://github.com/Sbjr-React-Utils-Components/Icons), you must also install it.
 
-
 ### CDN
+
 ```js
 <script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/icons@latest"></script>
 <script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/modal@latest"></script>
 ```
 
 ### Npm
+
 ```bash
 npm i -S @sbjr-react-utils-components/modal @sbjr-react-utils-components/icons
 ```
@@ -30,24 +31,24 @@ This package as 1 component `<Modal />` and 1 constante `MODAL_TYPE`.
 
 ### Modal Props
 
-| Props         | Description                                | Type                        | Default Value            |
-| ------------- | ------------------------------------------ | --------------------------- | ------------------------ |
-| className     | Class of the Component                     | string                      |                          |
-| show          | Show Component                             | boolean                     | false                    |
-| title         | Title of the component                     | Component or string         | Modal Title              |
-| body          | Body of the Component                      | Component or string         | Modal Body               |
-| typeModal     | Style of the Component (See `MODAL_TYPE`)  | string                      | `MODAL_TYPE.INFORMATION` |
-| onClose       | Function to close the modal                | function                    |                          |
-| footerButtons | List of footer Component (Buttons)         | Array (Component or string) |                          |
+| Props         | Description                               | Type                        | Default Value            |
+| ------------- | ----------------------------------------- | --------------------------- | ------------------------ |
+| className     | Class of the Component                    | string                      |                          |
+| show          | Show Component                            | boolean                     | false                    |
+| title         | Title of the component                    | Component or string         | Modal Title              |
+| body          | Body of the Component                     | Component or string         | Modal Body               |
+| typeModal     | Style of the Component (See `MODAL_TYPE`) | string                      | `MODAL_TYPE.INFORMATION` |
+| onClose       | Function to close the modal               | function                    |                          |
+| footerButtons | List of footer Component (Buttons)        | Array (Component or string) |                          |
 
 ### MODAL_TYPE Value
 
-| Value                      |
-| -------------------------- |
-| `MODAL_TYPE.WARNING`       |
-| `MODAL_TYPE.DANGER`        |
-| `MODAL_TYPE.SUCCESS`       |
-| `MODAL_TYPE.INFORMATION`   |
+| Value                    |
+| ------------------------ |
+| `MODAL_TYPE.WARNING`     |
+| `MODAL_TYPE.DANGER`      |
+| `MODAL_TYPE.SUCCESS`     |
+| `MODAL_TYPE.INFORMATION` |
 
 ## Examples
 
@@ -67,7 +68,7 @@ class App extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         <button
           type="button"
@@ -86,13 +87,11 @@ class App extends React.Component {
   }
 }
 
-render(
-  <App />,
-  document.getElementById('react-container'),
-);
+render(<App />, document.getElementById('react-container'));
 ```
 
 ### Complet
+
 ```js
 import React from 'react';
 import { render } from 'react-dom';
@@ -119,41 +118,41 @@ class App extends React.Component {
         </button>
         <Modal
           show={this.state.showModal}
-          title={(
+          title={
             <React.Fragment>
               a <em>Counter</em> For Modal
             </React.Fragment>
-          )}
-          body={(
+          }
+          body={
             <p>
               Counter: <strong>{this.state.counterModal}</strong>
             </p>
-          )}
+          }
           typeModal={this.state.typeModal}
           onClose={() => this.setState({ showModal: false })}
           footerButtons={[
-            (
-              <button
-                type="button"
-                onClick={() => this.setState({
+            <button
+              type="button"
+              onClick={() =>
+                this.setState({
                   counterModal: this.state.counterModal + 1,
                   typeModal: MODAL_TYPE.SUCCESS,
-                })}
-              >
-                +
-              </button>
-            ),
-            (
-              <button
-                type="button"
-                onClick={() => this.setState({
+                })
+              }
+            >
+              +
+            </button>,
+            <button
+              type="button"
+              onClick={() =>
+                this.setState({
                   counterModal: this.state.counterModal - 1,
                   typeModal: MODAL_TYPE.DANGER,
-                })}
-              >
-                -
-              </button>
-            ),
+                })
+              }
+            >
+              -
+            </button>,
           ]}
         />
       </div>
@@ -161,10 +160,7 @@ class App extends React.Component {
   }
 }
 
-render(
-  <App />,
-  document.getElementById('react-container'),
-);
+render(<App />, document.getElementById('react-container'));
 ```
 
 **Have fun.**

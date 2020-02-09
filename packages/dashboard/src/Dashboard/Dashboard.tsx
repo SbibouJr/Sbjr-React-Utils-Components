@@ -6,7 +6,7 @@ import { IDashboardProps } from './Dashboard.interfaces';
 /**
  * Dashboard Component
  */
-const Dashboard = ({ cards = [], onClick }: IDashboardProps) => (
+export const Dashboard = ({ cards = [], onClick }: IDashboardProps) => (
   <Styled.DashboardContainer className="dashboard-container">
     {cards.map(card => (
       <Styled.DashboardCard
@@ -31,5 +31,3 @@ const Dashboard = ({ cards = [], onClick }: IDashboardProps) => (
     ))}
   </Styled.DashboardContainer>
 );
-
-export default Dashboard;

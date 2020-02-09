@@ -1,0 +1,17 @@
+{
+  "name": "dashboard-exemple-cdn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App for test dashboard component with cdn",
+  "main": "src",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
+  }
+}

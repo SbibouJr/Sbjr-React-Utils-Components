@@ -2,7 +2,7 @@
 
 **A Markdown Renderer for react**
 
-![React image](https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png)
+![React image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMlUbPKRkWDuPrGLln27cr6_EK6ipM3Rw_vxNIxDaOVJA2e4O&s)
 
 ## Install
 
@@ -12,13 +12,18 @@ this module use [markdown-it](https://www.npmjs.com/package/markdown-it) and the
 ### CDN
 
 ```js
-<script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/markdown@latest"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@sbjr-react-utils-components/markdown@latest"
+></script>
 ```
 
 ### Npm
+
 ```bash
 npm i -S @sbjr-react-utils-components/markdown
 ```
+
 ## Usage
 
 ### Component
@@ -29,14 +34,9 @@ import { render } from 'react-dom';
 import Markdown from '@sbjr-react-utils-components/markdown';
 
 render(
-  (
-    <Markdown>
-      Hello **world**
-    </Markdown>
-  ),
+  <Markdown>Hello **world**</Markdown>,
   document.getElementById('react-container'),
 );
-
 ```
 
 ### Config
@@ -52,16 +52,16 @@ import Markdown from '@sbjr-react-utils-components/markdown';
 
 // full options list (defaults)
 const config = {
-  html:         false,        // Enable HTML tags in source
-  xhtmlOut:     false,        // Use '/' to close single tags (<br />).
-                              // This is only for full CommonMark compatibility.
-  breaks:       true,         // Convert '\n' in paragraphs into <br>
-  langPrefix:   'language-',  // CSS language prefix for fenced blocks. Can be
-                              // useful for external highlighters.
-  linkify:      false,        // Autoconvert URL-like text to links
+  html: false, // Enable HTML tags in source
+  xhtmlOut: false, // Use '/' to close single tags (<br />).
+  // This is only for full CommonMark compatibility.
+  breaks: true, // Convert '\n' in paragraphs into <br>
+  langPrefix: 'language-', // CSS language prefix for fenced blocks. Can be
+  // useful for external highlighters.
+  linkify: false, // Autoconvert URL-like text to links
 
   // Enable some language-neutral replacement + quotes beautification
-  typographer:  false,
+  typographer: false,
 
   // Double + single quotes replacement pairs, when typographer enabled,
   // and smartquotes on. Could be either a String or an Array.
@@ -77,11 +77,7 @@ const config = {
 };
 
 render(
-  (
-    <Markdown config={config}>
-      Hello **world**
-    </Markdown>
-  ),
+  <Markdown config={config}>Hello **world**</Markdown>,
   document.getElementById('react-container'),
 );
 ```
@@ -107,15 +103,11 @@ const config = {
 const content = 'Hello **world**';
 
 render(
-  (
-    <div>
-      {
-        parseMarkdownToHtml(content)
-        // OR parseMarkdownToHtml(content, config)
-      }
-
-    </div>
-  ),
+  <div>
+    {parseMarkdownToHtml(content)
+    // OR parseMarkdownToHtml(content, config)
+    }
+  </div>,
   document.getElementById('react-container'),
 );
 ```

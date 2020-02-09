@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>@Sbjr-react-utils-components/dashboard with CDN</title>
+  </head>
+  <body>
+    <div id="react"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-is/umd/react-is.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/styled-components/dist/styled-components.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/@sbjr-react-utils-components/dashboard@latest"></script>
+
+    <script type="text/babel">
+      const GlobalStyle = styled.createGlobalStyle`
+        html,
+        body {
+          background-color: black;
+          color: white;
+          margin: 0;
+          padding: 0;
+        }
+        h1 {
+          text-align: center;
+        }
+      `;
+
+      const App = () => {
+        const [cardsList, setCardsList] = React.useState([
+          {
+            title: 'Card 1',
+          },
+          {
+            title: 'Card 2',
+          },
+          {
+            title: 'Card 3',
+          },
+        ]);
+
+        return (
+          <>
+            <GlobalStyle />
+            <h1>Exemple Dashboard</h1>
+            <SbjrRUCDashboard.Dashboard
+              cards={cardsList}
+              onClick={card => alert(card.title)}
+            />
+          </>
+        );
+      };
+
+      ReactDOM.render(<App />, document.getElementById('react'));
+    </script>
+  </body>
+</html>

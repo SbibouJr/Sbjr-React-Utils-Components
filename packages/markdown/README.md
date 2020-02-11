@@ -70,7 +70,7 @@ npm i -S react
 <script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
 ```
 
-## Install
+## Installation
 
 ### NPM
 

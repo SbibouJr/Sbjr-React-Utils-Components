@@ -5,7 +5,7 @@ import prism from 'markdown-it-prism';
 import { MARKDOWN_DEFAULT_CONFIG } from '../../config/markdown';
 import { IMarkdownProps } from './Markdown.interfaces';
 
-const Markdown = ({ children, config = {} }: IMarkdownProps) => {
+export const Markdown = ({ children, config = {} }: IMarkdownProps) => {
   const newConfig = {
     ...MARKDOWN_DEFAULT_CONFIG,
     ...config,
@@ -25,5 +25,3 @@ const Markdown = ({ children, config = {} }: IMarkdownProps) => {
     />
   );
 };
-
-export default Markdown;

@@ -21,7 +21,7 @@
   },
   "author": "Billy Ros <billyros@gmail.com>",
   "license": "ISC",
-  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/packages/dashboard#readme",
+  "homepage": "https://github.com/SbibouJr/Sbjr-React-Utils-Components/tree/master/packages/dashboard",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SbibouJr/Sbjr-React-Utils-Components"

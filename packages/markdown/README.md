@@ -1,6 +1,6 @@
 <div align="center">
 
-# Sbjr-React-Utils-Components - Markdown
+# Sbjr-React-Utils-Components - Markdown - V4.0.0
 
 </div>
 
@@ -72,13 +72,13 @@ npm i -S react
 
 ## Install
 
-### CDN
-
-### Npm
+### NPM
 
 ```bash
 npm i -S @sbjr-react-utils-components/markdown
 ```
+
+### CDN
 
 ```js
 <script

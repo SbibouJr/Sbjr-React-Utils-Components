@@ -1,6 +1,6 @@
 <div align="center">
 
-# Sbjr-React-Utils-Components - Dashboard
+# Sbjr-React-Utils-Components - Dashboard - V3.0.0
 
 </div>
 

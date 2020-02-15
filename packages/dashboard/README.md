@@ -124,10 +124,10 @@ Or
 
 ### Dashboard Props `IDashboardProps`
 
-| Props Name | Description            | Type                             | required |
-| ---------- | ---------------------- | -------------------------------- | :------: |
-| cards      | Class of the Component | `IDashboardCard[]`               |          |
-| onClick    | Show Component         | `(card: IDashboardCard) => void` |          |
+| Props Name | Description                            | Type                             | required |
+| ---------- | -------------------------------------- | -------------------------------- | :------: |
+| cards      | Cards to be displayed by the dashboard | `IDashboardCard[]`               |          |
+| onClick    | Show Component                         | `(card: IDashboardCard) => void` |          |
 
 ### Dashboard Card `IDashboardCard`
 

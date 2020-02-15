@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Icon, { Loader, ExampleIcons } from '@sbjr-react-utils-components/icons';
+import { Icon, Loader, ExampleIcons } from '@sbjr-react-utils-components/icons';
 import '@sbjr-react-utils-components/icons/dist/index.css';
 
 import Modal from '@sbjr-react-utils-components/modal';

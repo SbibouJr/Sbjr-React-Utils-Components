@@ -22,9 +22,9 @@ module.exports = {
   output: {
     libraryTarget: 'umd',
     library: {
-      root: 'SbjrRUCDashboard',
-      commonjs: '@sbjr-react-utils-components/dashboard',
-      amd: '@sbjr-react-utils-components/dashboard',
+      root: 'SbjrRUCMarkdown',
+      commonjs: '@sbjr-react-utils-components/markdown',
+      amd: '@sbjr-react-utils-components/markdown',
     },
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',

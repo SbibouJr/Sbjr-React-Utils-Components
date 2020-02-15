@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@sbjr-react-utils-components/icons@latest/dist/index.css"
+    />
+    <title>@Sbjr-react-utils-components/icons with CDN Full List</title>
+  </head>
+  <body>
+    <div id="react"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-is/umd/react-is.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/styled-components/dist/styled-components.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/@sbjr-react-utils-components/icons@latest"></script>
+
+    <script type="text/babel">
+      const GlobalStyle = styled.createGlobalStyle`
+        html,
+        body {
+          background-color: black;
+          color: white;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+      `;
+
+      const IconsLibWrapper = styled.div`
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        div {
+          background-color: rgb(255, 255, 255, 0.2);
+          width: 400px;
+          height: 100px;
+          margin: 20px;
+          padding-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 20px;
+        }
+      `;
+
+      const App = () => {
+        return (
+          <>
+            <GlobalStyle />
+            <h1>Icons Full list</h1>
+            <hr />
+            <IconsLibWrapper>
+              <SbjrRUCIcons.ExampleIcons />
+            </IconsLibWrapper>
+          </>
+        );
+      };
+
+      ReactDOM.render(<App />, document.getElementById('react'));
+    </script>
+  </body>
+</html>

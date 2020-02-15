@@ -1,0 +1,13 @@
+{
+  "name": "icons-exemple-cdn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App for test icons component with cdn",
+  "main": "src",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {}
+}

@@ -1,0 +1,13 @@
+{
+  "name": "markdown-exemple-cdn",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App for test markdown component with cdn",
+  "main": "src",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {}
+}

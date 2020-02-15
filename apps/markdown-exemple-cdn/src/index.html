@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>@Sbjr-react-utils-components/markdown with CDN</title>
+  </head>
+  <body>
+    <div id="react"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/@sbjr-react-utils-components/markdown@latest"></script>
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <SbjrRUCMarkdown.Markdown>
+          {`
+            ### Markdown Component
+            Try to read **markdown** !
+          `}
+        </SbjrRUCMarkdown.Markdown>,
+        document.getElementById('react'),
+      );
+    </script>
+  </body>
+</html>

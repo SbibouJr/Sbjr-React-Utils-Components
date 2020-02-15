@@ -5,7 +5,7 @@ import * as Styled from './Icon.styles';
 import { CLASS_ICON } from '../constantes';
 import { IIconProps } from './Icon.interfaces';
 
-const Icon = ({
+export const Icon = ({
   classIcon = CLASS_ICON.TIMES,
   className = '',
   disabled = false,
@@ -20,5 +20,3 @@ const Icon = ({
     {...rest}
   />
 );
-
-export default Icon;

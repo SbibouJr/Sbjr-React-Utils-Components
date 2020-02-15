@@ -1,0 +1,22 @@
+{
+  "name": "icons-exemple",
+  "version": "1.0.0",
+  "private": true,
+  "description": "App for test icons component",
+  "main": "src",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sbjr-react-utils-components/icons": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
+  }
+}

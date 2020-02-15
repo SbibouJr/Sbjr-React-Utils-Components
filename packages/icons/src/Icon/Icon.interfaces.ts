@@ -1,6 +1,8 @@
+import { MouseEvent } from 'react';
+
 export interface IIconProps {
   classIcon?: string;
   className?: string;
   disabled?: boolean;
-  onClick?: () => void;
+  onClick?: (e: MouseEvent) => void;
 }

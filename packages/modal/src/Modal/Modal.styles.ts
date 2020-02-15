@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import Icon from '@sbjr-react-utils-components/icons';
+import { Icon } from '@sbjr-react-utils-components/icons';
 
 const successBackgroundColor = 'white';
 const successBorderColor = 'green';

@@ -1,18 +1,12 @@
 <div align="center">
 
-# Sbjr-React-Utils-Components - Markdown - V4.0.0
+# Sbjr-React-Utils-Components - Markdown - V4.0.1
 
 </div>
 
 <div align="center">
 
 ![React image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMlUbPKRkWDuPrGLln27cr6_EK6ipM3Rw_vxNIxDaOVJA2e4O&s)
-
-</div>
-
-<div align="center">
-
-![Styled-Components image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpayYM9FP_pcFaprfSXRI7eLeCNEfmtGppYKPHxnOmzny9y0eY&s)
 
 </div>
 

@@ -2,7 +2,7 @@
  * List of free fontawesome icons.
  * Link: https://fontawesome.com/icons?d=gallery&m=free
  */
-const CLASS_ICON = {
+export const CLASS_ICON = {
   '500PX': 'fab fa-500px',
   ACCESSIBLE_ICON: 'fab fa-accessible-icon',
   ACCUSTOF: 'fab fa-accustof',
@@ -1370,5 +1370,3 @@ const CLASS_ICON = {
   YOUTUBE_SQUARE: 'fab fa-youtube-square',
   ZHIHU: 'fab fa-zhihu',
 };
-
-export { CLASS_ICON };

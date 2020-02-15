@@ -1,6 +1,6 @@
 {
   "name": "@sbjr-react-utils-components/icons",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A React Icons Component based on Font-Awesome",
   "main": "./dist/index.js",
   "unpkg": "./dist/index.js",

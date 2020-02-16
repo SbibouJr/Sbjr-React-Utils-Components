@@ -22,6 +22,7 @@ export const ModalBackground = styled.div<{ show: boolean }>`
   height: 0px;
   overflow: hidden;
   z-index: 1000;
+  color: black;
   ${({ show }) =>
     show &&
     css`

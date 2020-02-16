@@ -5,14 +5,14 @@ import { CLASS_ICON } from '@sbjr-react-utils-components/icons';
 import * as Styled from './Modal.styles';
 import { IModalProps } from './Modal.interfaces';
 
-const Modal = ({
+export const Modal = ({
   className = '',
   show = false,
   title = 'Modal title',
   body = 'Modal content',
   typeModal = 'information',
   onClose,
-  footerButtons = [],
+  footerElements = [],
 }: IModalProps) => (
   <Styled.ModalBackground
     show={show}
@@ -28,10 +28,8 @@ const Modal = ({
       </Styled.ModalHeader>
       <Styled.ModalBody className="sbjr-modal-body">{body}</Styled.ModalBody>
       <Styled.ModalFooter className="sbjr-modal-footer">
-        {footerButtons.map(component => component)}
+        {footerElements.map(component => component)}
       </Styled.ModalFooter>
     </Styled.ModalContainer>
   </Styled.ModalBackground>
 );
-
-export default Modal;

@@ -1,166 +1,228 @@
-# Sbjr-React-Utils-Components - Modal
+<div align="center">
+
+# Sbjr-React-Utils-Components - Modal - V2.0.0
+
+</div>
+
+<div align="center">
 
 ![React image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaMlUbPKRkWDuPrGLln27cr6_EK6ipM3Rw_vxNIxDaOVJA2e4O&s)
 
-**React Modal Component.**
+</div>
 
-## Install
+<div align="center">
 
-This module is a React component, so you must obviously have [react](https://github.com/facebook/react) installed.
+![Styled-Components image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpayYM9FP_pcFaprfSXRI7eLeCNEfmtGppYKPHxnOmzny9y0eY&s)
 
-This module depends on another module, [@sbjr-react-utils-components/icons](https://github.com/Sbjr-React-Utils-Components/Icons), you must also install it.
+</div>
+
+## Sommaire
+
+---
+
+- [Precondition](#precondition)
+
+  - [NPM](#npm)
+  - [CDN](#cdn)
+
+- [Installation](#installation)
+
+  - [NPM](#npm-1)
+  - [CDN](#cdn-1)
+
+- [Usage](#usage)
+
+  - [NPM](#npm-2)
+  - [CDN](#cdn-2)
+
+- [Docs](#docs)
+
+  - [Modal Props](#modal-props-imodalprops)
+  - [TModalType](#tmodaltype)
+
+- [Examples](#examples)
+
+---
+
+## Precondition
+
+This module is a [React](https://github.com/facebook/react) component and uses [Styled-Components](https://github.com/styled-components/styled-components).
+
+It depends on its two modules, so you must have them installed.
+
+This module depends on another module, [@sbjr-react-utils-components/icons](https://github.com/SbibouJr/Sbjr-React-Utils-Components/tree/master/packages/icons), you must also install it.
+
+### NPM
+
+```bash
+npm i -S react styled-components @sbjr-react-utils-components/icons
+```
 
 ### CDN
 
-```js
+As described in the [styled-components documentation](https://styled-components.com/releases#v5.0.0):
+
+> if you use styled-components from CDN, **in v5 the "react-is" dependency was added (make sure you add this to your project)**.
+
+```jsx
+<script crossorigin src="https://unpkg.com/react-is/umd/react-is.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/styled-components/dist/styled-components.min.js" ></script>
 <script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/icons@latest"></script>
-<script type="text/javascript" src="https://unpkg.com/@sbjr-react-utils-components/modal@latest"></script>
 ```
 
-### Npm
+## Installation
+
+### NPM
 
 ```bash
-npm i -S @sbjr-react-utils-components/modal @sbjr-react-utils-components/icons
+npm i -S @sbjr-react-utils-components/modal
 ```
 
-## Doc
+### CDN
 
-This package as 1 component `<Modal />` and 1 constante `MODAL_TYPE`.
+```html
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@sbjr-react-utils-components/modal@latest"
+></script>
+```
 
-`import Modal, { MODAL_TYPE } from '@sbjr-react-utils-components/modal';`
+## Usage
 
-### Modal Props
+### NPM
 
-| Props         | Description                               | Type                        | Default Value            |
-| ------------- | ----------------------------------------- | --------------------------- | ------------------------ |
-| className     | Class of the Component                    | string                      |                          |
-| show          | Show Component                            | boolean                     | false                    |
-| title         | Title of the component                    | Component or string         | Modal Title              |
-| body          | Body of the Component                     | Component or string         | Modal Body               |
-| typeModal     | Style of the Component (See `MODAL_TYPE`) | string                      | `MODAL_TYPE.INFORMATION` |
-| onClose       | Function to close the modal               | function                    |                          |
-| footerButtons | List of footer Component (Buttons)        | Array (Component or string) |                          |
+```js
+import React, { useState } from 'react';
+import { render } from 'react-dom';
+import { Modal } from '@sbjr-react-utils-components/modal';
 
-### MODAL_TYPE Value
+const App = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-| Value                    |
-| ------------------------ |
-| `MODAL_TYPE.WARNING`     |
-| `MODAL_TYPE.DANGER`      |
-| `MODAL_TYPE.SUCCESS`     |
-| `MODAL_TYPE.INFORMATION` |
+  return (
+    <>
+      <input
+        type="submit"
+        onClick={() => setModalIsOpen(true)}
+        value="Ouvrir"
+      />
+
+      <Modal
+        title="Titre de la modale"
+        body="Contenu de la modale"
+        show={modalIsOpen}
+        onClose={() => setModalIsOpen(false)}
+      />
+    </>
+  );
+};
+
+render(
+  <App />} />,
+  document.getElementById('react-container'),
+);
+```
+
+To access the icons, you must load the css file.
+
+```js
+import '@sbjr-react-utils-components/icons/dist/index.css';
+```
+
+> If you are using webpack, you will probably have to use loaders like:
+> [style-loader](https://github.com/webpack-contrib/style-loader),
+> [css-loader](https://github.com/webpack-contrib/css-loader)
+> or [url-loader](https://github.com/webpack-contrib/url-loader).
+>
+> You can see an example [here](../../apps/modal-exemple/package.json).
+
+### CDN:
+
+```js
+const App = () => {
+  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+  return (
+    <>
+      <input
+        type="submit"
+        onClick={() => setModalIsOpen(true)}
+        value="Ouvrir"
+      />
+
+      <SbjrRUCModal.Modal
+        title="Titre de la modale"
+        body="Contenu de la modale"
+        show={modalIsOpen}
+        onClose={() => setModalIsOpen(false)}
+      />
+    </>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('react-container'));
+```
+
+To access the icons, you must load the css file.
+
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@sbjr-react-utils-components/icons@latest/dist/index.css"
+/>
+```
+
+## Docs
+
+This package as 1 component:
+
+- `<Modal />`
+
+1 typescript interface:
+
+- `IModalProps`
+
+And typescript 1 type:
+
+- `TModalType`
+
+You can access it by:
+
+`import { Modal, IModalProps, TModalType } from '@sbjr-react-utils-components/modal';`
+
+Or
+
+`const { Modal, IModalProps, TModalType } = window.SbjrRUCModal;`
+
+### Modal Props `IModalProps`
+
+| Props Name     | Description                                  | Type                                                | required | Default Value |
+| -------------- | -------------------------------------------- | --------------------------------------------------- | :------: | ------------- |
+| className      | Class of the Component                       | `string`                                            |          |               |
+| show           | Show Component                               | `boolean`                                           |  **x**   | `false`       |
+| typeModal      | Style of the Component                       | `TModalType`                                        |          | `information` |
+| title          | Title of the component                       | `(() => JSX.Element) | JSX.Element | string`        |          | 'Modal Title' |
+| body           | Body of the Component                        | `(() => JSX.Element) | JSX.Element | string`        |          | 'Modal Body'  |
+| footerElements | List of footer elements                      | `Array<(() => JSX.Element) | JSX.Element | string>` |          |               |
+| onClose        | Function called when want to close the modal | `() => void`                                        |          |               |
+
+### TModalType
+
+| Value         |
+| ------------- |
+| `warning`     |
+| `danger`      |
+| `success`     |
+| `information` |
 
 ## Examples
 
-### Basic
+Examples can be found [here](../../apps/modal-exemple) and [here](../../apps/modal-exemple-cdn).
 
-```js
-import React from 'react';
-import { render } from 'react-dom';
-import Modal from '@sbjr-react-utils-components/modal';
+<div align="center">
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showModal: false,
-    };
-  }
+**Have fun**
 
-  render() {
-    return (
-      <div>
-        <button
-          type="button"
-          onClick={() => this.setState({ showModal: true })}
-        >
-          Open Modal
-        </button>
-        <Modal
-          show={this.state.showModal}
-          title="Information Modal"
-          body="You Are informed"
-          onClose={() => this.setState({ showModal: false })}
-        />
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById('react-container'));
-```
-
-### Complet
-
-```js
-import React from 'react';
-import { render } from 'react-dom';
-import Modal, { MODAL_TYPE } from '@sbjr-react-utils-components/modal';
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showModal: false,
-      typeModal: MODAL_TYPE.INFORMATION,
-      counterModal: 0,
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <button
-          type="button"
-          onClick={() => this.setState({ showModal: true })}
-        >
-          Open Modal
-        </button>
-        <Modal
-          show={this.state.showModal}
-          title={
-            <React.Fragment>
-              a <em>Counter</em> For Modal
-            </React.Fragment>
-          }
-          body={
-            <p>
-              Counter: <strong>{this.state.counterModal}</strong>
-            </p>
-          }
-          typeModal={this.state.typeModal}
-          onClose={() => this.setState({ showModal: false })}
-          footerButtons={[
-            <button
-              type="button"
-              onClick={() =>
-                this.setState({
-                  counterModal: this.state.counterModal + 1,
-                  typeModal: MODAL_TYPE.SUCCESS,
-                })
-              }
-            >
-              +
-            </button>,
-            <button
-              type="button"
-              onClick={() =>
-                this.setState({
-                  counterModal: this.state.counterModal - 1,
-                  typeModal: MODAL_TYPE.DANGER,
-                })
-              }
-            >
-              -
-            </button>,
-          ]}
-        />
-      </div>
-    );
-  }
-}
-
-render(<App />, document.getElementById('react-container'));
-```
-
-**Have fun.**
+</div>

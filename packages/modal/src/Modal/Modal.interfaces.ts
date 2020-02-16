@@ -4,7 +4,7 @@ export interface IModalProps {
   typeModal?: TModalType;
   title?: (() => JSX.Element) | JSX.Element | string;
   body?: (() => JSX.Element) | JSX.Element | string;
-  footerButtons?: Array<(() => JSX.Element) | JSX.Element | string>;
+  footerElements?: Array<(() => JSX.Element) | JSX.Element | string>;
   onClose?: () => void;
 }
 

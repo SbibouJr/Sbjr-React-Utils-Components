@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width , height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@sbjr-react-utils-components/icons@latest/dist/index.css"
+    />
+    <title>@Sbjr-react-utils-components/modal with CDN</title>
+  </head>
+  <body>
+    <div id="react"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-is/umd/react-is.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/styled-components/dist/styled-components.min.js"
+    ></script>
+
+    <script src="https://unpkg.com/@sbjr-react-utils-components/modal@latest"></script>
+
+    <script type="text/babel">
+      const GlobalStyle = styled.createGlobalStyle`
+        html,
+        body {
+          background-color: black;
+          color: white;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+      `;
+      const Button = styled.button`
+        padding: 10px;
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover {
+          padding: 10px;
+          background-color: rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+        }
+      `;
+
+      const App = () => {
+        const [modalIsOpen, setModalIsOpen] = useState(false);
+
+        return (
+          <>
+            <GlobalStyle />
+            <h1>Modal exemple</h1>
+            <Button onClick={() => setModalIsOpen(true)}>
+              Ovrire la modale ?
+            </Button>
+
+            <SbjrRUCModal.Modal
+              title="Titre de la modale"
+              body="Contenu de la modale"
+              show={modalIsOpen}
+              onClose={() => setModalIsOpen(false)}
+            />
+          </>
+        );
+      };
+
+      ReactDOM.render(<App />, document.getElementById('react'));
+    </script>
+  </body>
+</html>

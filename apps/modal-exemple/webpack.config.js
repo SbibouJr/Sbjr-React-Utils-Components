@@ -35,10 +35,6 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|jpg|jpeg|gif|svg)$/,
-        loader: 'file-loader',
-      },
-      {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
@@ -50,10 +46,6 @@ module.exports = {
         ],
       },
     ],
-  },
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js',
   },
   devServer: {
     host: '0.0.0.0',

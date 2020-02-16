@@ -160,5 +160,6 @@ PACKAGE=@sbjr-react-utils-components/dashboard TO=app-test npm run add-package
 - [x] Libérer le repo @sbjr-react-utils-components et créer un repo @old-sbjr-react-utils-components
 - [x] Mettre a jours les packages.json des packages (repo, issues, homepage)
 - [x] Mettre a jour le readme global du monorepo
-- [ ] Mettre a jours les readme des packages
-- [ ] Changer les versions et déployer les nouveau packages
+- [x] Mettre a jours les readme des packages
+- [x] Changer les versions et déployer les nouveau packages
+- [ ] Mettre à jour le DEV_README.md
